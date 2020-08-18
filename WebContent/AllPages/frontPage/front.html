@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Event management@geeks_group</title>
+      <style>
+    #nloader {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: 10;
+    overflow: visible;
+    /*background:#000 url('USERpics/loader.gif') no-repeat center center;*/
+    /*display: none;*/
+}
+ </style>
+<!-- 
+  <style media="screen" type="text/css">
+      .layer1_class { position: absolute; z-index: 1; top: 100px; left: 0px; visibility: visible; }
+      .layer2_class { position: absolute; z-index: 2; top: 10px; left: 10px; visibility: hidden }
+    </style>
+    <script>
+      function downLoad(){
+        if (document.all){
+            document.all["layer1"].style.visibility="hidden";
+            document.all["layer2"].style.visibility="visible";
+        } else if (document.getElementById){
+            node = document.getElementById("layer1").style.visibility='hidden';
+            node = document.getElementById("layer2").style.visibility='visible';
+        }
+      }
+    </script>-->
+<!--<link href="../fontawesome/css/all.css" rel="stylesheet" type="text/css"/>-->
+<link href="../../MYSITE/fontawesome/css/all.css" rel="stylesheet" type="text/css"/>
+<!--<link href="/MYSITE/AllPages/fontawesome/css/all.css" rel="stylesheet" type="text/css"/>-->
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">   
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@600&display=swap" rel="stylesheet">
+			<link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap" rel="stylesheet">
+			<link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+			<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+       
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>  
+        
+<!--<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">-->
+  <!--<script src="https://kit.fontawesome.com/e057dff8c2.js" crossorigin="anonymous"></script>-->
+	<script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+ <link href="AllPages/frontPage/front.css" rel="stylesheet" type="text/css"/>
+                                                                                                                
+   
+    
+   
+        <script src="AllPages/frontPage/front.js" type="text/javascript"></script>
+
+        
+          
+     
+</head>                                                  <!--  #6372d6                                                margin-top: 20%;margin-left: 40%-->
+<body>
+ <div id="nloader" class=".layer1_class" style="background:#6372d6 url('USERpics/loader4.gif') no-repeat center center; position: fixed; width: 100%;height: 100vh;  z-index: 10;
+    overflow: visible;">
+        <!--<img src="USERpics/loader.gif" style="background:no-repeat center center;">-->
+    </div>
+    
+    <div id="mainC" class=".layer2_class" style="display:none">
+    
+        <!--all links--> 
+        
+        
+         
+        
+
+
+
+
+
+
+ <ul id="social-sidebar">
+  <li>
+    <a class="entypo-twitter"><span>Tweeter</span></a>
+  </li>
+  <li>
+    <a class="entypo-facebook"><span>Facebook</span></a>
+  </li>
+  <li>
+    <a class="entypo-gplus"><span>Google+</span></a>
+  </li>
+  <li>
+    <a class="entypo-dribbble"><span>Dribbble</span></a>
+  </li>
+  <li>
+    <a class="entypo-dropbox"><span>Dropbox</span></a>
+  </li>
+  <li>
+    <a class="entypo-github"><span>Github</span></a>
+  </li>
+  <li>
+    <a class="entypo-evernote"><span>Evernote</span></a>
+  </li>
+</ul>
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+      <div class="wrapper">
+            <header>
+
+                  <nav>
+
+                        <div class="menu-icon">  
+                            <i class="fas fa-align-justify"></i>  
+                        </div>
+
+                        <div class="logo">
+                              LOGO
+                        </div>
+
+                        <div class="menu">
+                              <ul>
+                                  <li><a href="#" class="links"><b>Home</b></a></li>
+                                  <li><a href="#about" class="links"><b>About</b></a></li>
+                                    <li>
+                                        <div class="hlinks"><b>Events</b>
+                                            <div class="dropdown-content">
+                                                <a href="#" id="sub-links" class="sub-links"><b>Event 1</b></a>
+                                                <a href="#" id="sub-links" class="sub-links"><b>Event 2</b></a>
+                                                <a href="#" id="sub-links" class="sub-links"><b>Event 3</b></a> 
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li><a href="#contact" class="links"><b>Contact</b></a></li>
+																		
+																		
+																		
+																		
+					 <!--class="MYnavB_btn"-->													
+														
+<li>   <a class="rainbow rainbow-5" style="color:white;" href="AllPages/LoginAsAdmin/Login.jsp" target="_blank">Login as Admin</a>
+</li>
+                                         
+                                      											
+																	
+																	
+																	
+																	
+																	
+																	
+																		
+                              </ul>
+                        </div>
+                  </nav>
+
+
+                		
+				 
+                
+                
+            </header>
+							
+          <!--<div class="lgnBTN  d-flex justify-content-center">-->					
+
+<!--              <li><a style="color:white;" href="AllPages/LoginAsAdmin/Login.jsp" target="_blank" class="admin-login">Login as Admin
+                  </a>
+              </li>				-->
+    
+             
+   
+			</li>
+
+
+
+
+
+          <!--</div>--> 
+         
+          
+          
+          
+          
+          
+          
+						
+	<div id="over">
+	     <div>
+			      <span id="overImg"></span>
+			 </div>
+				
+				<!--		<div class="header">
+		<div class="container">
+			<div class="mainheader"><h1>For Participating</h1></div>
+			<div class="subheader"><h2>in the most exciting event</h2></div>
+			<button class="register" onclick="window.open('https://www.google.com','_blank')"><h2>Register Here</h2></button>
+		</div>
+	</div>
+	  -->
+	
+				
+				
+    
+    
+    <!--
+    
+	<div>
+		<p class="des">This is the most fabulous event happening in the history. D-Day is waiting for you.</p>
+	</div>
+			-->			
+                        <div id="register" class="d-flex justify-content-center">
+				   <!-- <button class="register"  onclick="window.open('https://www.google.com','_blank')"><h2>Register Here</h2></button>  -->	
+						<a  href="AllPages/RegisterPage/register.jsp" target="_blank" class="register"><span>Register here</span></a>
+				</div>		
+						
+	</div>					
+					
+						
+				
+				<!--d-flex justify-content-center align-items-center-->			
+						
+						
+				
+						
+						
+						
+						
+						
+						
+
+            <div class="content">
+                  <p id="about"> 
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+												  </p>
+												
+												
+												
+												
+												
+												
+												
+												
+												
+              <!--    <div id="contactus">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                  </div>   -->
+									
+									           <!--  <div class="contact" id="contact">  -->
+ 
+ 
+  <div class="center  d-flex justify-content-center" id="contact">
+      <ul>
+        <li>  <a href="https://www.facebook.com/" target="_blank">
+          <span class="fab fa-facebook-f"></span> </a> </li>
+        <li>   <a href="https://twitter.com/login" target="_blank">
+          <span class="fab fa-twitter "></span></a></li>
+        <li> <a href="https://www.instagram.com/" target="_blank">
+          <span class="fab fa-instagram"></span></a></li>
+        <li> <a href="https://in.linkedin.com/" target="_blank">
+          <span class="fab fa-linkedin-in"></span></a></li>
+        <li>  <a href="https://www.youtube.com" target="_blank">
+          <span class="fab fa-github" id="yt"></span></a></li>  
+        <div class="text  d-flex justify-content-center"><b>Contact us</b></div>
+      </ul>
+    </div>
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <!--
+    <ul class=".ul">
+      <li class=".li">
+        <a href="https://www.facebook.com/" target="_blank">
+          <span  class=".span"></span>
+          <span  class=".span"></span>
+          <span  class=".span"></span>
+          <span  class=".span"></span>
+          <span class="fab fa-facebook-f .span"></span>
+        </a>
+      </li>
+
+      <li class=".li">
+        <a href="https://twitter.com/login" target="_blank">
+          <span  class=".span"></span>
+          <span  class=".span"></span>
+          <span  class=".span"></span>
+          <span  class=".span"></span>
+          <span class="fab fa-twitter .span"></span>
+        </a>
+      </li>
+
+      <li class=".li">
+        <a href="https://myaccount.google.com" target="_blank">
+          <span  class=".span"></span>
+          <span  class=".span"></span>
+          <span  class=".span"></span>
+          <span  class=".span"></span>
+          <span class="fab fa-google-plus-g .span"></span>
+        </a>
+      </li>
+
+      <li class=".li">
+        <a href="https://in.linkedin.com/" target="_blank">
+          <span  class=".span"></span>
+          <span  class=".span"></span>
+          <span  class=".span"></span>
+          <span  class=".span"></span>
+          <span class="fab fa-linkedin-in .span"></span>
+        </a>
+      </li>
+
+      <li class=".li">
+        <a href="https://www.instagram.com/" target="_blank">
+          <span  class=".span"></span>
+          <span  class=".span"></span>
+          <span  class=".span"></span>
+          <span  class=".span"></span>
+          <span class="fab fa-instagram .span"></span>
+        </a>
+      </li>
+    </ul>
+
+   -->
+
+
+
+									
+									
+									
+									
+									
+									
+									
+            </div>
+      </div>
+
+      
+</div> 
+</body>
+</html>
+
+<!--
+<%-- 
+    Document   : success
+    Created on : 8 Aug, 2020, 10:59:56 AM
+    Author     : ashut
+--%>-->

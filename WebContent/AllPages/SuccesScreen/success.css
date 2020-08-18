@@ -1,0 +1,135 @@
+/* body property */
+body { 
+    margin: 1000;
+    padding: 0;
+    font-family: sans-serif;
+    animation-name : example;  /* set the animation name */
+    animation-duration: 2s;   /* set the length of time of animation */
+    animation-iteration-count: infinite;  /* specifies the number of times an animation should be played */
+}
+ /* controls  the intermediate steps of animation */
+@keyframes example {   
+  0%
+  {
+    background-image: linear-gradient(to right, #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%);
+    }
+  100% 
+  {
+    background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+    }
+}
+/* customizes the main box of the page */
+
+
+
+.box {   
+    width: 50vw;
+    padding:50px;
+    position: relative;
+    top: 50%;
+    left: 23%;
+    /*right: 10%;*/
+    background:url(https://cdn.dribbble.com/users/315048/screenshots/3710002/check.gif?vid=1;) center center ;
+    text-align: center;
+    transition: 0.25s;
+    margin-top: 100px;
+    border:solid;
+    border-radius:13px;
+    border-color:white;
+}
+/* class which set the color and font size for h1 */
+.box h1 {  
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500px;
+    top:10px
+}
+
+/*.box input[type="text"],  select text field
+.box input[type="ID"] {
+    border: 0;
+    background:none;
+    display: block;
+    margin: 40px auto;
+    text-align: center;
+    border: 3px solid #3498db;
+    padding: 20px 10px;
+    width: 350px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+}*/
+/* class which set the color and font size of h2 */
+.box h2 { 
+  text-transform : uppercase;
+  font size:5px;
+   width: 50%;
+  color:white;
+}
+ /*class to customise the h2 text*/
+.word {
+   margin-left:25% ;
+  color: white;
+  font: 700 normal 1.5em 'tahoma';
+  text-shadow: 5px 2px #222324, 2px 4px #222324, 3px 5px #222324;
+}
+/* class which change the font size of h3 text*/
+.box h3{   
+  font-size:26px; /* 1em = 10px */
+}
+/*class for animation*/
+.animated {
+  margin: auto;
+  color: white;
+  font: 700 normal 2.5em 'tahoma';
+  text-shadow: 5px 2px #222324, 2px 4px #222324, 3px 5px #222324;
+  animation-name: bounce; /* set the animation name to bounce*/
+  animation-duration: 2s; /*set the duration*/
+  animation-iteration-count: infinite; /* specifies the number of tumes an animation should run*/
+  backface-visibility: visible;
+}
+/*sets the intermediate steps for bounce animation*/
+@keyframes bounce{
+   0% {transform: perspective(400px) translateZ(0) rotateY(0) scale(1);animation-timing-function: ease-out;}
+  40% {transform: perspective(400px) translateZ(0px) rotateY(170deg) scale(1);animation-timing-function: ease-out;}
+  50% {transform: perspective(400px) translateZ(0px) rotateY(190deg) scale(1);animation-timing-function: ease-in;}
+  80% {transform: perspective(400px) translateZ(0) rotateY(360deg) scale(.95);animation-timing-function: ease-in;}
+  100% {transform: perspective(400px) translateZ(0) rotateY(360deg) scale(1);animation-timing-function: ease
+  }
+}
+/*selects the text field 
+.box input[type="text"]:focus,
+.box input[type="text"]:focus{
+  width: 300px;
+  border-color: orange;
+  font-weight:bold;
+  font-size:30px;
+} */
+.box label{
+  font-size:25px;
+}
+
+
+/* .in{
+        width:80%  ;
+    }*/
+   
+@media (max-width: 750px) {
+    
+    .word{
+       margin-left:10%
+    }
+    .box{
+         /*right: 6%;*/
+        left: 13%;
+       
+       
+    }
+    
+    
+    
+/*    .in{
+        width:2%  ;
+    }*/
+ }

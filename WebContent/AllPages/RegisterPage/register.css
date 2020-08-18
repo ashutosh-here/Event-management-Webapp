@@ -1,0 +1,386 @@
+html{
+     scrollbar-width:none!important;
+}
+html::-webkit-scrollbar {
+   display: hidden;
+   width:0;
+}
+
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+h3 {
+  font-size: 40px;
+  font-family: "DM Sans", sans-serif;
+  color: white;
+  align-items: justify;
+  margin: 0px;
+}
+
+body {
+  background: linear-gradient(40deg, rgb(65, 201, 225), rgb(230, 25, 195));
+  text-align: center;
+  font-size: 17px;
+
+  height: 100%;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+p {
+  font-size: 15px;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 600;
+  text-align: center;
+  color: black;
+  padding: 5px;
+}
+
+.box {
+  /*border: 2px solid grey;*/
+  border-radius: 25px;
+  border: 0px;
+  height: 50px;
+  width: 400px;
+  margin: 5px;
+  background-color: rgb(231, 230, 230);
+  text-align: center;
+  display: inline-block;
+  align-items: center;
+  font-family: "DM Sans", sans-serif;
+  font-size: 20px;
+}
+
+.center {
+  margin: auto;
+/*  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 10%;
+  margin-right: 10%;*/
+  /*margin:auto 10% auto;*/
+  
+  width: 55%;
+  border: 5px;
+  background-color: white;
+  border-radius: 50px;
+  height: 990px;
+ margin-bottom:5vh;
+
+}
+.center .inpt{
+    width: 60%;
+
+}
+.bbbb{
+    width: 40%;
+    margin-left:30%;
+}
+
+  ::-webkit-input-placeholder {
+  color: #232323;
+  font-size: 18px;
+}
+::-moz-placeholder {
+color: #232323;
+  font-size: 18px;
+}
+:-ms-input-placeholder {
+color: #232323;
+font-size: 18px;
+}
+::placeholder {
+  color: #232323;
+  font-size: 18px;
+}
+
+@media only screen and (max-width: 800px) and (min-width: 450px){
+ .center {
+  margin: auto;
+/*  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 10%;
+  margin-right: 10%;*/
+  /*margin:auto 10% auto;*/
+  
+  width: 80%;
+  border: 5px;
+  background-color: white;
+  border-radius: 50px;
+  height: 990px;
+ margin-bottom:5vh;
+
+}
+.center .inpt{
+    width: 60%;
+
+}
+
+  
+  ::-webkit-input-placeholder {
+  color: #232323;
+  font-size: 15px;
+}
+::-moz-placeholder {
+color: #232323;
+  font-size: 15px;
+}
+:-ms-input-placeholder {
+color: #232323;
+font-size: 15px;
+}
+::placeholder {
+  color: #232323;
+  font-size: 15px;
+}
+  
+}
+  
+  @media only screen and (max-width: 450px){
+    
+    .center {
+  margin:auto;
+  /*margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 10%;
+  margin-right: 10%;
+  /*margin:auto 10% auto;*/
+  
+  width: 95%;
+  border: 5px;
+  background-color: white;
+  border-radius: 80px;
+  height: 1000px;
+ 
+
+}
+.center .inpt{
+    width: 60%;
+}
+    
+    
+::-webkit-input-placeholder {
+  color: #232323;
+  font-size: 12.5px;
+}
+::-moz-placeholder {
+color: #232323;
+  font-size: 12.5px;
+}
+:-ms-input-placeholder {
+color: #232323;
+font-size: 12.5px;
+}
+::placeholder {
+  color: #232323;
+  font-size: 12.5px;
+}
+
+    
+  }
+  
+  
+  
+  
+
+.rdbutton {
+  font-family: "DM Sans", sans-serif;
+  width: 400px;
+  color: black;
+  text-align: center;
+  font-size: 20px;
+}
+
+.subbutton {
+  height: 45px;
+  width: 200px;
+  font-family: "DM Sans", sans-serif;
+  background-image: linear-gradient(60deg, rgb(230, 25, 195), rgb(65, 201, 225));
+  border-radius: 25px;
+  border: 0px;
+}
+
+.upload-btn-wrapper {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn {
+  border: 2px solid gray;
+  color: blacks;
+  background-color: white;
+  padding: 8px 20px;
+  border-radius: 25px;
+  font-size: 20px;
+  font-weight: bold;
+  align-items: center;
+  display: inline-block;
+  justify-content: center;
+  font-family: "DM Sans", sans-serif;
+  margin: 10px;
+}
+
+.upload-btn-wrapper input[type=file] {
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  display: flex;
+}
+
+
+
+
+
+.inputGroup {
+  background-color: rgb(231, 230, 230) !important;
+  display: block !important;
+  margin: 10px auto ;
+  position: relative !important;
+  border: 25px !important;
+  font-family: "DM Sans", sans-serif !important;
+}
+
+.inputGroup label {
+  padding: 12px 30px !important;
+  width: 100% !important;
+  display: block;
+  text-align: left;
+  color: #3c454c;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+  transition: color 200ms ease-in;
+  overflow: hidden;
+}
+
+.inputGroup label:before {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  content: '';
+  background-color: #5562eb;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) scale3d(1, 1, 1);
+  transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 0;
+  z-index: -1;
+}
+
+.inputGroup label:after {
+  width: 32px;
+  height: 32px;
+  content: '';
+  border: 2px solid #d1d7dc;
+  background-color: #fff;
+  background-image: url("data:image/svg+xml,%3Csvg width='32' height='32' viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.414 11L4 12.414l5.414 5.414L20.828 6.414 19.414 5l-10 10z' fill='%23fff' fill-rule='nonzero'/%3E%3C/svg%3E ");
+  background-repeat: no-repeat;
+  background-position: 2px 3px;
+  border-radius: 50%;
+  z-index: 2;
+  position: absolute;
+  right: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  transition: all 200ms ease-in;
+}
+
+.inputGroup input:checked~label {
+  color: #fff;
+}
+
+.inputGroup input:checked~label:before {
+  transform: translate(-50%, -50%) scale3d(56, 56, 1);
+  opacity: 1;
+}
+
+.inputGroup input:checked~label:after {
+  background-color: #54e0c7;
+  border-color: #54e0c7;
+}
+
+.inputGroup input {
+  width: 32px;
+  height: 32px;
+  order: 1;
+  z-index: 2;
+  position: absolute;
+  right: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  visibility: hidden;
+}
+
+
+
+.form {
+  padding: 0 16px;
+  max-width: 550px;
+  margin: 50px auto;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 36px;
+}
+
+
+
+
+
+
+
+
+
+
+.modal-dialog {
+  min-height: calc(100vh - 60px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: auto;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 20px;
+}
+
+.modal-header {
+  background: linear-gradient(35deg, rgb(218, 37, 241), rgb(31, 66, 223));
+
+}
+
+.btn-btn-default {
+  border-radius: 25px;
+  border: 0px;
+  width: 100px;
+  height: 40px;
+  background: linear-gradient(35deg, rgb(31, 66, 223), rgb(218, 37, 241));
+  font-size: 14px;
+}
+
+.btn-btn-edit {
+  border-radius: 25px;
+  border: 0px;
+  width: 100px;
+  height: 40px;
+}
+
+.idimage {
+  height: 350px;
+  width: 500px;
+}
+
+td {
+  text-align: left;
+}
